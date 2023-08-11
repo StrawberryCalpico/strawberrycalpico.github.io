@@ -30,7 +30,7 @@ const Introduction: React.FC = () => {
 					<h2
 						onClick={handleAbout}
 						className={
-							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer " +
+							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
 							(aboutActive ? "border-fuchsia-400" : "")
 						}
 					>
@@ -39,7 +39,7 @@ const Introduction: React.FC = () => {
 					<h2
 						onClick={handleAcademic}
 						className={
-							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer " +
+							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
 							(academicActive ? "border-fuchsia-400" : "")
 						}
 					>
@@ -48,7 +48,7 @@ const Introduction: React.FC = () => {
 					<h2
 						onClick={handleSkill}
 						className={
-							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer " +
+							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
 							(skillActive ? "border-fuchsia-400" : "")
 						}
 					>
@@ -58,9 +58,18 @@ const Introduction: React.FC = () => {
 				{aboutActive ? (
 					<>
 						<p className="text-lg text-center">
-							I'm Ruike, a new graduate Software Developer who is
-							passionate about Coding! I am looking for full time
-							opportuniteis! Feel free to contact me!
+							Hi! I'm Ruike, a new graduate Software Developer who
+							is passionate about Coding! I have knowledge of Full
+							stack development, data structure and algorithms,
+							machine learning, computer networking, etc. I am
+							looking for full time opportuniteis! Feel free to
+							contact me at{" "}
+							<a
+								className="underline decoration-solid underline-offset-8 cursor-pointer"
+								href="mailto:rq2046@nyu.edu"
+							>
+								rq2046@nyu.edu
+							</a>
 						</p>
 					</>
 				) : (
@@ -76,6 +85,8 @@ const Introduction: React.FC = () => {
 							Bachelor's degree in Computer Science and Economics
 							from UC Davis
 						</p>
+						<br />
+						<br />
 					</>
 				) : (
 					<></>
@@ -89,6 +100,8 @@ const Introduction: React.FC = () => {
 						<p className="text-lg text-center">
 							Framework: React, Express, MongoDB, NodeJS, JWT
 						</p>
+						<br />
+						<br />
 					</>
 				) : (
 					<> </>

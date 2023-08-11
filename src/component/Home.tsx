@@ -8,30 +8,35 @@ const Home: React.FC = () => {
 			title: "Star Book",
 			thumbnail: "/starbook.png",
 			description: "Kpop card trading website",
+			url: "https://github.com/StrawberryCalpico/starbooktrading",
 		},
 		{
 			id: 2,
 			title: "Due Tonight",
 			thumbnail: "/DueTonight.png",
 			description: "A 2d fighting game in Unity",
+			url: "https://m2neko.itch.io/duetonight",
 		},
 		{
 			id: 3,
 			title: "Project Holder",
 			thumbnail: "/P1.jpeg",
 			description: "More projects coming in...",
+			url: "/project/3",
 		},
 		{
 			id: 4,
 			title: "Project Holder",
 			thumbnail: "/P1.jpeg",
 			description: "More projects coming in...",
+			url: "/project/4",
 		},
 		{
 			id: 5,
 			title: "Project Holder",
 			thumbnail: "/P1.jpeg",
 			description: "More projects coming in...",
+			url: "/project/5",
 		},
 	];
 	return (
@@ -44,7 +49,7 @@ const Home: React.FC = () => {
 				<div style={{ display: "flex", flexWrap: "wrap" }}>
 					{projects.map((project) => (
 						<a
-							href={`/projects/${project.id}`}
+							href={`${project.url}`}
 							key={project.id}
 							className="bg-gray-100 z-10 hover:z-50 rounded-[8px] p-[1rem] mb-[1rem] cursor-pointer border-solid border-[0.7px] border-[#ccc] hover:scale-[1.2] transform transition-transform duration-[500]"
 						>
