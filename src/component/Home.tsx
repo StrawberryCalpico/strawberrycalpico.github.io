@@ -26,17 +26,10 @@ const Home: React.FC = () => {
 		},
 		{
 			id: 4,
-			title: "Project Holder",
-			thumbnail: "/P1.jpeg",
-			description: "More projects coming in...",
-			url: "/project/4",
-		},
-		{
-			id: 5,
-			title: "Project Holder",
-			thumbnail: "/P1.jpeg",
-			description: "More projects coming in...",
-			url: "/project/5",
+			title: "Network Design",
+			thumbnail: "networkproject.png",
+			description: "Airline Network Design",
+			url: "networkdesign.pdf",
 		},
 	];
 	return (
