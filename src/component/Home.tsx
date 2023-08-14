@@ -21,7 +21,7 @@ const Home: React.FC = () => {
 			id: 3,
 			title: "UCD Lost and Found",
 			thumbnail: "/ucdlostandfound.png",
-			description: "More projects coming in...",
+			description: "UC Davis Lost and Found",
 			url: "https://low-industrious-shop.glitch.me",
 		},
 		{
