@@ -26,6 +26,13 @@ const Home: React.FC = () => {
 		},
 		{
 			id: 4,
+			title: "Ke Chat",
+			thumbnail: "chatroom.png",
+			description: "Public Chatting Room App",
+			url: "https://github.com/KeyQorLLC/PublicChattingRoom",
+		},
+		{
+			id: 5,
 			title: "Network Design",
 			thumbnail: "networkproject.png",
 			description: "Airline Network Design",
