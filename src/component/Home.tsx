@@ -19,10 +19,10 @@ const Home: React.FC = () => {
 		},
 		{
 			id: 3,
-			title: "Project Holder",
-			thumbnail: "/P1.jpeg",
+			title: "UCD Lost and Found",
+			thumbnail: "/ucdlostandfound.png",
 			description: "More projects coming in...",
-			url: "/project/3",
+			url: "https://low-industrious-shop.glitch.me",
 		},
 		{
 			id: 4,
