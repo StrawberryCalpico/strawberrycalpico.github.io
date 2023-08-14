@@ -8,7 +8,7 @@ const Home: React.FC = () => {
 			title: "Star Book",
 			thumbnail: "/starbook.png",
 			description: "Kpop card trading website",
-			url: "https://github.com/StrawberryCalpico/starbooktrading",
+			url: "https://github.com/KeyQorLLC/ExchangePcs",
 		},
 		{
 			id: 2,
