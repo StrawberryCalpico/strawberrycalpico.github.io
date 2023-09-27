@@ -43,10 +43,10 @@ const Home: React.FC = () => {
 		<>
 			<Introduction />
 			<div className="bg-gray-100 p-4">
-				<h1 className="text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-2">
+				<h1 className="text-custom-green text-xs sm:text-base md:text-xl lg:text-2xl font-semibold mb-4 mx-auto text-center border-b-2">
 					Welcome to Ruike's Projects
 				</h1>
-				<div style={{ display: "flex", flexWrap: "wrap" }}>
+				<div className="flex justify-center flex-wrap">
 					{projects.map((project) => (
 						<a
 							href={`${project.url}`}
@@ -59,10 +59,12 @@ const Home: React.FC = () => {
 								className="mb-2"
 								style={{ width: "200px", height: "150px" }}
 							/>
-							<h3 className="text-lg font-bold">
+							<h3 className="text-xs md:text-lg font-bold">
 								{project.title}
 							</h3>
-							<p>{project.description}</p>
+							<p className="text-xs md:text-lg">
+								{project.description}
+							</p>
 						</a>
 					))}
 				</div>

@@ -30,7 +30,7 @@ const Introduction: React.FC = () => {
 					<h2
 						onClick={handleAbout}
 						className={
-							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
+							"text-custom-green text-xs sm:text-base md:text-xl lg:text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
 							(aboutActive ? "border-fuchsia-400" : "")
 						}
 					>
@@ -39,7 +39,7 @@ const Introduction: React.FC = () => {
 					<h2
 						onClick={handleAcademic}
 						className={
-							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
+							"text-custom-green text-xs sm:text-base md:text-xl lg:text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
 							(academicActive ? "border-fuchsia-400" : "")
 						}
 					>
@@ -48,7 +48,7 @@ const Introduction: React.FC = () => {
 					<h2
 						onClick={handleSkill}
 						className={
-							"text-custom-green text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
+							"text-custom-green text-xs sm:text-base md:text-xl lg:text-2xl font-semibold mb-4 mx-auto text-center border-b-4 cursor-pointer hover:scale-[1.2] transform transition-transform duration-[500] " +
 							(skillActive ? "border-fuchsia-400" : "")
 						}
 					>
@@ -57,7 +57,7 @@ const Introduction: React.FC = () => {
 				</div>
 				{aboutActive ? (
 					<>
-						<p className="text-lg text-center">
+						<p className="text-xs md:text-lg text-center">
 							Hi! I'm Ruike, a new graduate Software Developer who
 							is passionate about Coding! I have knowledge of Full
 							stack development, data structure and algorithms,
@@ -77,11 +77,11 @@ const Introduction: React.FC = () => {
 				)}
 				{academicActive ? (
 					<>
-						<p className="text-lg text-center">
+						<p className="text-xs md:text-lg text-center">
 							Master's degree in Computer Engineering from New
 							York University
 						</p>
-						<p className="text-lg text-center">
+						<p className="text-xs md:text-lg text-center">
 							Bachelor's degree in Computer Science and Economics
 							from UC Davis
 						</p>
@@ -93,11 +93,11 @@ const Introduction: React.FC = () => {
 				)}
 				{skillActive ? (
 					<>
-						<p className="text-lg text-center">
+						<p className="text-xs md:text-lg text-center">
 							Programming language: Python, JavaScript, Java, C,
 							C++, Golang
 						</p>
-						<p className="text-lg text-center">
+						<p className="text-xs md:text-lg text-center">
 							Framework: React, Express, MongoDB, NodeJS, JWT
 						</p>
 						<br />
@@ -108,7 +108,10 @@ const Introduction: React.FC = () => {
 				)}
 			</div>
 			<div className="w-1/2">
-				<img src="/p3.png" className="w-2/3 h-2/3 ml-[80px]" />
+				<img
+					src="/p3.png"
+					className="w-2/3 h-2/3 ml-[50px] md:ml-[80px]"
+				/>
 			</div>
 		</div>
 	);
